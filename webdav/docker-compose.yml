@@ -1,0 +1,6 @@
+webdav:
+    image: parente/webdav
+    ports:
+        - 443:443
+    environment:
+        PASSWORD: dummy
