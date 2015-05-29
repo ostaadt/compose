@@ -1,0 +1,13 @@
+owncloud:
+    image: l3iggs/owncloud
+    ports:
+        - 80:80
+        - 434:434
+    volumes_from:
+        - ownclouddata
+
+ownclouddata:
+    image: l3iggs/owncloud
+    volumes:
+        - /usr/share/webapps/owncloud/data
+    command: /bin/true
